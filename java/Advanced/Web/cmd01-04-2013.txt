@@ -1,0 +1,52 @@
+    1  sudo /etc/init.d/oracle-xe restart
+    2  mkdir Web
+    3  cd Web/
+    4  mkdir browser
+    5  vi browser/GreetingApplet.java
+    6  javac browser/GreetingApplet.java
+    7  vi applettest.html
+    8  firefox applettest.html
+    9  vi applettest.html
+   10  vi browser/GreetingApplet.java
+   11  javac browser/GreetingApplet.java
+   12  firefox applettest.html
+   13  vi browser/GreetingApplet.java
+   14  firefox applettest.html
+   15  vi applettest.html 
+   16  firefox applettest.html
+   17  vi browser/GreetingApplet.java
+   18  vi applettest.html 
+   19  javac browser/GreetingApplet.java
+   20  firefox applettest.html
+   21  vi browser/GreetingApplet.java
+   22  javac browser/GreetingApplet.java
+   23  vi applettest.html 
+   24  firefox applettest.html
+   25  ~/glassfish3/bin/asadmin start-domain
+   26  firefox
+   27  mkdir BasicWebApp
+   28  cd BasicWebApp/
+   29  mkdir WEB-INF
+   30  mkdir WEB-INF/classes
+   31  cp ~/Shared/web.xml WEB-INF/
+   32  vi welcome.html
+   33  ~/glassfish3/bin/asadmin deploy .
+   34  vi WEB-INF/web.xml 
+   35  touch .reload
+   36  vi welcome.html
+   37  export CLASSPATH=.:~/glassfish3/glassfish/lib/javaee.jar 
+   38  cd WEB-INF/classes/
+   39  mkdir basicwebapp
+   40  vi basicwebapp/GreetingServlet.java
+   41  javac basicwebapp/GreetingServlet.java
+   42  unset CLASSPATH
+   43  javac basicwebapp/GreetingServlet.java
+   44  export CLASSPATH=.:~/glassfish3/glassfish/lib/javaee.jar 
+   45  vi basicwebapp/GreetingServlet.java
+   46  javac basicwebapp/GreetingServlet.java
+   47  vi ../web.xml 
+   48  touch ../../.reload 
+   49  vi ../web.xml 
+   50  touch ../../.reload 
+   51  ~/glassfish3/bin/asadmin stop-domain
+   52  history > cmd01-04-2013.txt

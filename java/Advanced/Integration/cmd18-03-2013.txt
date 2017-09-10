@@ -1,0 +1,29 @@
+    1  ls
+    2  mkdir Advanced
+    3  cd Advanced/
+    4  mkdir Integration
+    5  cd Integration/
+    6  /SoftDev/Foundations/Fundamentals/UNIX-II/shmemtest
+    7  vi /SoftDev/Foundations/Fundamentals/UNIX-II/shmemtest.c
+    8  vi NativeMethodTest.java
+    9  javac NativeMethodTest.java
+   10  vi nmt.c
+   11  cc -shared -fPIC -o libnmt.so nmt.c -lrt
+   12  vi nmt.c
+   13  export CPATH=/usr/java/jdk1.6.0_14/include/:/usr/java/jdk1.6.0_14/include/linux/
+   14  cc -shared -fPIC -o libnmt.so nmt.c -lrt
+   15  vi NativeMethodTest.java
+   16  javac NativeMethodTest.java
+   17  java NativeMethodTest
+   18  java -Djava.library.path=. NativeMethodTest
+   19  export LD_LIBRARY_PATH=.
+   20  java NativeMethodTest
+   21  java NativeMethodTest
+   22  java NativeMethodTest
+   23  vi NativeMethodTest.java
+   24  javac NativeMethodTest.java
+   25  java NativeMethodTest
+   26  vi NativeMethodTest.java
+   27  javac NativeMethodTest.java
+   28  java NativeMethodTest
+   29  history > cmd18-03-2013.txt

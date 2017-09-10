@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>applettest.html</title>
+		<script type="text/javascript">
+			function doReset(){
+				var name = prompt("Enter your name", "Guest");
+				if(name != null)
+					document.greeter.resetOutput("Hello " + name);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Greeting Applet</h1>
+		<applet name="greeter" code="browser.GreetingApplet"
+		width="300" height="80">
+			<param name="timeFormat" value="yyyy-MM-dd hh:mm:ss a">
+		</applet>
+		<p><a href="javascript:doReset()">Reset</a></p>
+	</body>
+</html>
+

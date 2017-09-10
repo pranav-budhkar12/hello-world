@@ -1,0 +1,42 @@
+    1  cd /SoftDev/Java/Advanced/Integration/
+    2  ls
+    3  ll
+    4  ls
+    5  vi StringAccessTest.java
+    6  javac StringAccessTest.java
+    7  java StringAccessTest monday
+    8  java -Djava.library.path=. StringAccessTest monday
+    9  export CPATH=/usr/java/jdk1.6.0_14/include/:/usr/java/jdk1.6.0_14/include/linux/
+   10  javah StringHelper
+   11  vi StringHelper.h 
+   12  vi strh.cpp
+   13  c++ -shared -fPIC -o libstrh.so strh.cpp
+   14  export LD_LIBRARY_PATH=.
+   15  java StringAccessTest monday
+   16  java StringAccessTest monday
+   17  java StringAccessTest tuesday
+   18  vi StringAccessTest.java 
+   19  javac StringAccessTest.java 
+   20  java StringAccessTest tuesday
+   21  javah StringHelper
+   22  vi StringHelper.h
+   23  vi strh.cpp 
+   24  c++ -shared -fPIC -o libstrh.so strh.cpp
+   25  java StringAccessTest tuesday
+   26  vi ArrayAccessTest.java
+   27  javac ArrayAccessTest.java
+   28  javah ArrayHelper
+   29  vi ArrayHelper.h
+   30  vi arrh.cpp
+   31  c++ -shared -fPIC -o libarrh.so arrh.cpp
+   32  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   33  vi ArrayAccessTest.java
+   34  javac ArrayAccessTest.java
+   35  javah ArrayHelper
+   36  vi ArrayHelper.h
+   37  vi arrh.cpp
+   38  c++ -shared -fPIC -o libarrh.so arrh.cpp
+   39  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   40  java ArrayAccessTest 1 2 3 4
+   41  vi ArrayAccessTest.java
+   42  history >cmd19-03-2013.txt

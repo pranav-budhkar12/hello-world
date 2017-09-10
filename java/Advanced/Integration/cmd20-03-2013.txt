@@ -1,0 +1,50 @@
+    1  cp /SoftDev/Foundations/Fundamentals/Assembly/ccallproc.o boxvol.o
+    2  objdump -d -M intel boxvol.o 
+    3  vi ObjectAccessTest.java
+    4  javac ObjectAccessTest.java
+    5  javah LegacyBox
+    6  vi LegacyBox.h
+    7  vi lbox.cpp
+    8  javap -p -s LegacyBox
+    9  vi lbox.cpp
+   10  cd
+   11  vi .vimrc 
+   12  exit
+   13  cd /SoftDev/Java/Advanced/Integration/
+   14  export CPATH=/usr/java/jdk1.6.0_14/include/:/usr/java/jdk1.6.0_14/include/linux/
+   15  export LD_LIBRARY_PATH=.
+   16  c++ -shared -fPIC -o liblbox.so lbox.cpp boxvol.o 
+   17  java ObjectAccessTest 10 8 7 1
+   18  java ObjectAccessTest 10 8 7 4
+   19  vi ObjectAccessTest.java 
+   20  javac ObjectAccessTest.java 
+   21  vi lbox.cpp 
+   22  javap -p -s LegacyBox
+   23  vi lbox.cpp 
+   24  c++ -shared -fPIC -o liblbox.so lbox.cpp boxvol.o 
+   25  java ObjectAccessTest 12 8 7 1
+   26  java ObjectAccessTest 12 8 7 3
+   27  java ObjectAccessTest 12 8 7 4
+   28  vi ReversePrinter.java
+   29  vi ReversePrinter.java
+   30  javac ReversePrinter.java
+   31  vi ReversePrinter.java
+   32  javap -s ReversePrinter
+   33  export LIBRARY_PATH=/usr/java/jdk1.6.0_14/jre/lib/i386/client/
+   34  export LD_LIBRARY_PATH=.:$LIBRARY_PATH
+   35  vi invocationtest.cpp
+   36  c++ -o invocationtest invocationtest.cpp -ljvm
+   37  ./invocationtest ReversePrinter
+   38  vi invocationtest.cpp
+   39  c++ -o invocationtest invocationtest.cpp -ljvm
+   40  vi invocationtest.cpp
+   41  c++ -o invocationtest invocationtest.cpp -ljvm
+   42  vi invocationtest.cpp
+   43  c++ -o invocationtest invocationtest.cpp -ljvm
+   44  ./invocationtest ReversePrinter
+   45  ./invocationtest ReversePrinter
+   46  exit
+   47  cd /SoftDev/Java/Advanced/
+   48  ls
+   49  cd Integration/
+   50  history > cmd20-03-2013.txt

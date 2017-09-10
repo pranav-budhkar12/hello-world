@@ -1,0 +1,30 @@
+   25  cd ..
+   26  cd ..
+   27  mkdir Database
+   28  cd Database/
+   29  ping 192.168.4.31
+   30  vi MySQLQueryTest.java
+   31  javac MySQLQueryTest.java
+   32  java MySQLQueryTest 
+   33  vi MySQLQueryTest.java
+   34  javac MySQLQueryTest.java
+   35  java MySQLQueryTest 
+   36  vi MySQLQueryTest.java
+   37  javac MySQLQueryTest.java
+   38  java MySQLQueryTest
+   39  cp MySQLQueryTest.java OracleQueryTest.java
+   40  vi OracleQueryTest.java
+   41  javac OracleQueryTest.java
+   42  java OracleQueryTest
+   43  sudo /etc/init.d/oracle-xe restart 
+   44  vi OracleQueryTest.java
+   45  javac OracleQueryTest.java
+   46  java OracleQueryTest
+   47  vi jdbc.properties
+   48  cp OracleQueryTest.java DBQueryTest.java
+   49  vi DBQueryTest.java
+   50  javac DBQueryTest.java
+   51  java DBQueryTest
+   52  vi jdbc.properties 
+   53  java DBQueryTest
+   54  history > cmd25-03-2013.txt

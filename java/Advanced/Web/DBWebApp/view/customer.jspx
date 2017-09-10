@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Login - DBWebApp</title>
+	</head>
+
+	<body>
+		<h1>Customer Login</h1>
+		<p>
+			<form action="login" method="POST">
+				<b>Customer ID</b><br/>
+				<input type="text" name="customerId"/><br/><br/>
+				<b>Password</b><br/>
+				<input type="password" name="password"/><br/><br/>
+				<input type="submit" value="Login"/>
+			</form>
+		</p>
+		<p>
+			<b>Authorization ${requestScope.failed ? 'Failed!' : 'Required.'}</b>			
+		</p>
+	</body>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

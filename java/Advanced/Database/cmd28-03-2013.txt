@@ -1,0 +1,21 @@
+    1  sudo /etc/init.d/oracle-xe restart
+    2  mkdir sales
+    3  vi sales/Invoice.java
+    4  javac sales/Invoice.java
+    5  vi sales/OrderManager.java
+    6  javac sales/OrderManager.java
+    7  wsgen -cp . sales.OrderManager
+    8  ll sales
+    9  ll sales/jaxws/
+   10  vi MiddleTierTest.java
+   11  javac MiddleTierTest.java
+   12  java MiddleTierTest &
+   13  wsimport -p sales.client http://fedguest:8056/orderManager?wsdl
+   14  ll sales/client/
+   15  cp StoredProcTest.java FrontendTest.java
+   16  vi FrontendTest.java
+   17  javac FrontendTest.java
+   18  vi FrontendTest.java
+   19  javac FrontendTest.java
+   20  java FrontendTest CU104 103 2
+   21  history > cmd28-03-2013.txt

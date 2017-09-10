@@ -1,0 +1,47 @@
+    1  ~/glassfish3/bin/asadmin start-domain
+    2  export CLASSPATH=.:~/glassfish3/glassfish/lib/javaee.jar 
+    3  ls
+    4  cd BasicWebApp/
+    5  cd WEB-INF/classes/
+    6  cp basicwebapp/PutTimeTag.java basicwebapp/ColorTextTag.java
+    7  vi basicwebapp/ColorTextTag.java 
+    8  javac basicwebapp/ColorTextTag.java 
+    9  vi ../basic.tld 
+   10  touch ../../.reload 
+   11  vi ../../tagtest.jsp 
+   12  vi basicwebapp/CounterBean.java
+   13  javac basicwebapp/CounterBean.java
+   14  touch ../../.reload 
+   15  cp ../../welcome.html ../../beantest.html
+   16  vi ../../beantest.html
+   17  mv ../../beantest.html ../../beantest.jsp 
+   18  vi ../../beantest.jsp
+   19  vi ../../beantest.jsp
+   20  vi basicwebapp/CalculatorBean.java
+   21  javac basicwebapp/CalculatorBean.java
+   22  touch ../../.reload 
+   23  vi ../../beantest.jsp
+   24  cd ..
+   25  cd ..
+   26  cd ..
+   27  sudo /etc/init.d/oracle-xe restart
+   28  mkdir DBWebApp
+   29  cd DBWebApp/
+   30  mkdir WEB-INF
+   31  mkdir WEB-INF/classes
+   32  cp ~/Shared/web.xml WEB-INF/
+   33  ~/glassfish3/bin/asadmin deploy .
+   34  cd WEB-INF/classes/
+   35  mkdir controller
+   36  mkdir model
+   37  vi model/ProductInfoTag.java
+   38  javac model/ProductInfoTag.java
+   39  vi model/ProductInfoTag.java
+   40  javac model/ProductInfoTag.java
+   41  cp ~/Shared/taglib.tld ../sales.tld
+   42  vi ../sales.tld 
+   43  touch ../../.reload
+   44  mkdir ../../view
+   45  vi ../../view/product.jspx
+   46  ~/glassfish3/bin/asadmin stop-domain
+   47  history >cmd03-04-2013.txt

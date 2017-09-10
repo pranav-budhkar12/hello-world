@@ -1,0 +1,18 @@
+    1  cd /SoftDev/Java/Advanced/Communication/
+    2  mkdir RMI
+    3  cd RMI/
+    4  mkdir shopping
+    5  vi shopping/PriceManager.java
+    6  javac shopping/PriceManager.java
+    7  vi shopping/PriceManagerImpl.java
+    8  javac shopping/PriceManagerImpl.java
+    9  rmiregistry &
+   10  vi JRMPServerTest1.java
+   11  javac JRMPServerTest1.java
+   12  vi JRMPServerTest1.java
+   13  javac JRMPServerTest1.java
+   14  java JRMPServerTest1 &
+   15  ps
+   16  kill 8169
+   17  kill 8016
+   18  history > cmd22-03-2013.txt

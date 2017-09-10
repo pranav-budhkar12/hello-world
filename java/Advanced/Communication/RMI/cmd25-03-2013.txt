@@ -1,0 +1,23 @@
+    1  cp shopping/CartImpl1.java shopping/CartImpl2.java
+    2  vi shopping/CartImpl2.java
+    3  javac shopping/CartImpl2.java
+    4  cp shopping/CartFactoryImpl1.java shopping/CartFactoryImpl2.java
+    5  vi shopping/CartFactoryImpl2.java 
+    6  javac shopping/CartFactoryImpl2.java 
+    7  rmic -iiop shopping.CartImpl2 
+    8  ll shopping/*.class
+    9  orbd -ORBInitialPort 1900 &
+   10  vi jndi.properties
+   11  vi IIOPServerTest.java
+   12  javac IIOPServerTest.java
+   13  java IIOPServerTest &
+   14  java IIOPServerTest 
+   15  rmic -iiop shopping.CartFactoryImpl2 
+   16  java IIOPServerTest &
+   17  cp JRMPClientTest2.java IIOPClientTest.java
+   18  vi IIOPClientTest.java
+   19  javac IIOPClientTest.java
+   20  java IIOPClientTest
+   21  ps
+   22  kill 4253
+   23  kill 3890

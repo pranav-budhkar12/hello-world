@@ -1,0 +1,27 @@
+    1  sudo /etc/init.d/oracle-xe restart
+    2  vi UpdateTest.java
+    3  javac UpdateTest.java
+    4  java OracleQueryTest
+    5  java UpdateTest 103
+    6  java OracleQueryTest
+    7  java OracleQueryTest
+    8  java UpdateTest 
+    9  java OracleQueryTest
+   10  java UpdateTest 201
+   11  cp UpdateTest.java ParamSQLTest.java
+   12  vi ParamSQLTest.java
+   13  javac ParamSQLTest.java
+   14  java ParamSQLTest CU101 105 18
+   15  java ParamSQLTest CU108 104 7
+   16  java ParamSQLTest CU103 104 7
+   17  cp ParamSQLTest.java StoredProcTest.java
+   18  vi StoredProcTest.java
+   19  javac StoredProcTest.java
+   20  java StoredProcTest CU102 102 12
+   21  vi StoredProcTest.java
+   22  javac ParamSQLTest.java 
+   23  javac StoredProcTest.java
+   24  java StoredProcTest CU102 102 12
+   25  java StoredProcTest CU101 203 15
+   26  java StoredProcTest CU101 103 15
+   27  history > cmd26-03-2013.txt

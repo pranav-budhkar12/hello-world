@@ -1,0 +1,36 @@
+    1  vi JFCPlainTest.java
+    2  javac JFCPlainTest.java
+    3  java JFCPlainTest
+    4  vi JFCPlainTest.java
+    5  javac JFCPlainTest.java
+    6  java JFCPlainTest
+    7  cp JFCPlainTest.java JFCPaintTest.java
+    8  vi JFCPaintTest.java 
+    9  vi JFCPaintTest.java 
+   10  javac JFCPaintTest.java 
+   11  java JFCPaintTest
+   12  vi JFCPaintTest.java 
+   13  javac JFCPaintTest.java 
+   14  java JFCPaintTest
+   15  vi JFCPaintTest.java 
+   16  javac JFCPaintTest.java 
+   17  java JFCPaintTest
+   18  cp JFCPlainTest.java JFCChildTest.java
+   19  vi JFCChildTest.java
+   20  javac JFCChildTest.java
+   21  java JFCChildTest
+   22  vi JFCChildTest.java
+   23  javac JFCChildTest.java
+   24  java JFCChildTest
+   25  sudo /etc/init.d/oracle-xe restart
+   26  cp JFCPlainTest.java JFCMVCAppTest.java
+   27  vi JFCMVCAppTest.java
+   28  javac JFCMVCAppTest.java
+   29  java JFCMVCAppTest
+   30* 
+   31  javac JFCMVCAppTest.java
+   32  vi JFCMVCAppTest.java
+   33  javac JFCMVCAppTest.java
+   34  java JFCMVCAppTest
+   35  vi JFCMVCAppTest.java
+   36  history >cmd30-03-2013.txt

@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:jsp="http://java.sun.com/JSP/Page"
+	  xmlns:c="http://java.sun.com/jsp/jstl/core"
+	  xmlns:s="http://adsd.met.edu/sales">
+
+	<jsp:useBean id="login" class="model.CustomerBean" scope="session" />
+
+	<head>
+		<title>Order - DBWebApp</title>
+	</head>
+
+	<body>
+		<h1>Welcome Customer ${login.customerId}</h1>
+		<p>
+		  <form action="order" method="POST">
+			<b>Product No</b><br/>
+			<select name="productNo" style="width:180px;">
+				<s:getProduct var="entry">
+					<option>${entry.productNo}</option>
+				</s:getProduct>
+			</select><br/><br/>
+			<b>Quantity</b><br/>
+			<input type="text" name="quantity"/><br/><br/>
+			<input type="submit" name="submit" value="Order"/>
+		  </form>
+		</p>
+		<p>
+			<a href="logout">Log Out</a>
+		</p>
+	</body>
+	
+</html>

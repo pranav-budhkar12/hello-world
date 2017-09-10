@@ -1,0 +1,38 @@
+    1  rmiregistry &
+    2  java JRMPServerTest1 &
+    3  vi JRMPClientTest1.java
+    4  javac JRMPClientTest1.java
+    5  vi JRMPClientTest1.java
+    6  javac JRMPClientTest1.java
+    7  java JRMPClientTest1
+    8  java JRMPClientTest1
+    9  vi JRMPClientTest1.java
+   10  javac JRMPClientTest1.java
+   11  java JRMPClientTest1
+   12  mkdir ~/Shared/Testing/shopping
+   13  cp shopping/PriceManager.class ~/Shared/Testing/shopping/
+   14  cp JRMPClientTest1.class ~/Shared/Testing/
+   15  cp shopping/PriceManagerImpl.class ~/Shared/Testing/shopping/
+   16  cp JRMPServerTest1.class ~/Shared/Testing/
+   17  cp shopping/Store.class ~/Shared/Testing/shopping/
+   18  vi shopping/PriceManagerImpl.java 
+   19  vi shopping/Cart.java
+   20  vi shopping/Cart.java
+   21  javac shopping/Cart.java
+   22  vi shopping/CartImpl1.java
+   23  javac shopping/CartImpl1.java
+   24  vi shopping/CartFactory.java
+   25  javac shopping/CartFactory.java
+   26  vi shopping/CartFactoryImpl1.java
+   27  javac shopping/CartFactoryImpl1.java
+   28  vi JRMPServerTest2.java
+   29  javac JRMPServerTest2.java
+   30  ps
+   31  kill 8369
+   32  java JRMPServerTest2 &
+   33  vi JRMPClientTest2.java
+   34  javac JRMPClientTest2.java
+   35  java JRMPClientTest2
+   36  vi JRMPClientTest2.java
+   37  javac JRMPClientTest2.java
+   38  history > cmd23-03-2013.txt

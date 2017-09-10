@@ -1,0 +1,43 @@
+    1  cp /SoftDev/Foundations/Fundamentals/Assembly/ccallproc.o boxvol.o
+    2  objdump -d -M intel boxvol.o 
+    3  vi ObjectAccessTest.java
+   55  mkdir Communication
+   56  cd Communication/
+   57  mkdir Sockets
+   58  cd Sockets/
+   59  vi InetAddrTest.java
+   60  javac InetAddrTest.java
+   61  java InetAddrTest
+   62  java InetAddrTest google.com
+   63  java InetAddrTest met.edu
+   64  java InetAddrTest adsd3.met.edu
+   65  java InetAddrTest adsd10.met.edu
+   66  java InetAddrTest adsd10
+   67  vi TCPServerTest1.java
+   68  javac TCPServerTest1.java
+   69  vi TCPServerTest1.java
+   70  javac TCPServerTest1.java
+   71  java TCPServerTest1 &
+   72  netstat -noa
+   73  netstat -noa |more
+   74  telnet fedguest 2055
+   75  ps
+   76* kill 1202
+   77  cp TCPServerTest1.class ~/Shared/Testing/
+   78  vi TCPServerTest1.java 
+   79  javac TCPServerTest1.java
+   80  cp TCPServerTest1.class ~/Shared/Testing/
+   81  cp TCPServerTest1.java TCPServerTest2.java
+   82  vi TCPServerTest2.java 
+   83  javac TCPServerTest2.java 
+   84  vi TCPServerTest2.java 
+   85  javac TCPServerTest2.java 
+   86  cp TCPServerTest2.class ~/Shared/Testing/
+   87  cp TCPServerTest2$1.class ~/Shared/Testing/
+   88  cp TCPServerTest2*.class ~/Shared/Testing/
+   89  java TCPServerTest2 &
+   90  vi TCPClientTest.java
+   91  javac TCPClientTest.java
+   92  java TCPClientTest fedguest DELL
+   93  java TCPClientTest fedguest SUNW
+   94  history > cmd20-03-2013.txt

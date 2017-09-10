@@ -1,0 +1,32 @@
+    1  ~/glassfish3/bin/asadmin start-domain
+    2  export CLASSPATH=.:~/glassfish3/glassfish/lib/javaee.jar 
+    3  cd BasicWebApp/WEB-INF/classes/
+    4  vi basicwebapp/StateServletTest.java
+    5  mv basicwebapp/StateServletTest.java basicwebapp/StateServlet.java 
+    6  vi basicwebapp/StateServlet.java
+    7  javac basicwebapp/StateServlet.java
+    8  touch ../../.reload 
+    9  vi basicwebapp/StateServlet.java
+   10  javac basicwebapp/StateServlet.java
+   11  touch ../../.reload 
+   12  vi basicwebapp/StateServlet.java
+   13  javac basicwebapp/StateServlet.java
+   14  touch ../../.reload 
+   15  vi basicwebapp/StateServlet.java
+   16  javac basicwebapp/StateServlet.java
+   17  touch ../../.reload 
+   18  touch ../../.reload 
+   19  vi basicwebapp/StateServlet.java
+   20  cd ../..
+   21  cp welcome.html welcome.jsp
+   22  vi welcome.jsp
+   23  cd WEB-INF/classes/
+   24  vi basicwebapp/PutTimeTag.java
+   25  javac basicwebapp/PutTimeTag.java
+   26  touch ../../.reload 
+   27  cp ~/Shared/taglib.tld ../basic.tld
+   28  vi ../basic.tld 
+   29  touch ../../.reload
+   30  cp ../../welcome.html ../../tagtest.jsp
+   31  vi ../../tagtest.jsp 
+   32  history > cmd02-04-2013.txt

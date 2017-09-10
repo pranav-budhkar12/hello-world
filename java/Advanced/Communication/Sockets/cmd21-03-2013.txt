@@ -1,0 +1,46 @@
+    1  cd /SoftDev/Java/Advanced/Communication/Sockets/
+    2  vi UDPPubTest.java
+    3  vi TCPServerTest1.java 
+    4  vi UDPPubTest.java
+    5  javac UDPPubTest.java
+    6  vi UDPSubTest.java
+    7  javac UDPSubTest.java
+    8  vi UDPSubTest.java
+    9  javac UDPSubTest.java
+   10  cp UDP*.class ~/Shared/Testing/
+   11  cp TCPClientTest*.class ~/Shared/Testing/
+   12  java TCPServerTest1 &
+   13  java TCPClientTest 192.168.1.235
+   14  java TCPClientTest 192.168.1.235 GOGL
+   15  kill 6080
+   16  java TCPServerTest1 &
+   17  java TCPClientTest 192.168.1.235 GOGL
+   18  kill 6435
+   19  vi HTTPServerTest.java
+   20  javac HTTPServerTest.java
+   21  vi HTTPServerTest.java
+   22  javac HTTPServerTest.java
+   23  vi HTTPServerTest.java
+   24  javac HTTPServerTest.java
+   25  java HTTPServerTest &
+   26  firefox
+   27  vi URLTest.java
+   28  javac URLTest.java
+   29  java URLTest fedguest INTC
+   30  java URLTest fedguest SUNW
+   31  ps
+   32  kill 7262
+   33  vi NIOServerTest.java
+   34  javac NIOServerTest.java
+   35  java NIOServerTest &
+   36  telnet fedguest 3055
+   37  telnet fedguest 3055
+   38  vi NIOClientTest.java
+   39  javac NIOClientTest.java
+   40  vi NIOClientTest.java
+   41  javac NIOClientTest.java
+   42  java NIOClientTest fedguest monday
+   43  java NIOClientTest fedguest NLMGBZ
+   44  ps
+   45  kill 8486
+   46  history > cmd21-03-2013.txt
