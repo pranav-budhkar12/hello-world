@@ -1,0 +1,43 @@
+  496  cd Basics/
+  497  vi GenClassTest1.java
+  498  javac GenClassTest1.java
+  499  vi GenClassTest1.java
+  500  javac GenClassTest1.java
+  501  vi GenClassTest1.java
+  502  javac GenClassTest1.java
+  503  java GenClassTest1
+  504  javap -p GenClassTest1\$IndexedValue
+  505  cp GenClassTest1.java GenClassTest2.java
+  506  vi GenClassTest2.java
+  507  javac GenClassTest2.java
+  508  java GenClassTest2
+  509  vi GenClassTest2.java
+  510  javac GenClassTest2.java
+  511  vi GenClassTest2.java
+  512  javac GenClassTest2.java
+  513  vi GenClassTest2.java
+  514  javac GenClassTest2.java
+  515  java GenClassTest2
+  516  vi GenClassTest2.java
+  517  javac GenClassTest2.java
+  518  vi GenClassTest2.java
+  519  javac GenClassTest2.java
+  520  java GenClassTest2
+  521  vi IterationTest.java
+  522  javac IterationTest.java
+  523  vi IterationTest.java
+  524  javap java.lang.Iterable
+  525  javap java.util.Iterator
+  526  vi IterationTest.java
+  527  javac IterationTest.java
+  528  java IterationTest
+  529  java IterationTest
+  530  vi IterationTest.java
+  531  cd ..
+  532  mkdir Collections
+  533  cd Collections/
+  534  cd ..
+  535  cd Basics/
+  536  ll
+  537  ls
+  538  history > cmd04-03-2013.txt

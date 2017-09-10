@@ -1,0 +1,58 @@
+    1  pwd
+    2  cp ../Basics/Interval.java .
+    3  vi ArrayListTest.java
+    4  javac ArrayListTest.java
+    5  java ArrayListTest
+    6  cp ArrayListTest.java LinkedListTest.java
+    7  vi LinkedListTest.java
+    8  javac LinkedListTest.java
+    9  java LinkedListTest
+   10  cp ArrayListTest.java HashSetTest.java
+   11  vi HashSetTest.java
+   12  javac HashSetTest.java
+   13  vi HashSetTest.java
+   14  javac HashSetTest.java
+   15  java HashSetTest
+   16  cp HashSetTest.java TreeSetTest1.java
+   17  vi TreeSetTest1.java
+   18  javac TreeSetTest1.java
+   19  java TreeSetTest1
+   20  cp TreeSetTest1.java TreeSetTest2.java
+   21  vi TreeSetTest2.java
+   22  javac TreeSetTest2.java
+   23  java TreeSetTest2
+   24  cp HashSetTest.java HashMapTest.java
+   25  vi HashMapTest.java
+   26  javac HashMapTest.java
+   27  vi HashMapTest.java
+   28  javac HashMapTest.java
+   29  java HashMapTest
+   30  vi HashMapTest.java
+   31  javac HashMapTest.java
+   32  java HashMapTest
+   33  java HashMapTest
+   34  cp HashMapTest.java TreeMapTest.java
+   35  vi TreeMapTest.java
+   36  javac TreeMapTest.java
+   37  java TreeMapTest
+   38  java TreeMapTest
+   39  vi PropertiesTest.java
+   40  javac PropertiesTest.java
+   41  vi PropertiesTest.java
+   42  javac PropertiesTest.java
+   43  java PropertiesTest os.name
+   44  cp PropertiesTest.class ~/Shared/
+   45  java PropertiesTest os.arch
+   46  java PropertiesTest user.name
+   47  java PropertiesTest
+   48  java -Dmy.name=jack PropertiesTest
+   49  cd ..
+   50  cd ..
+   51  mkdir Reflection
+   52  cd Reflection/
+   53  cd ..
+   54  cd Generics/
+   55  ls
+   56  cd Collections/
+   57  ls
+   58  history > cmd05-03-2013.txt

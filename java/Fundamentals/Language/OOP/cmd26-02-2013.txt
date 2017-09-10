@@ -1,0 +1,326 @@
+    1  cd /SoftDev/
+    2  ll
+    3  exit
+    4  cd /SoftDev/
+    5  ls
+    6  ll
+    7  cd LAMP/
+    8  ls
+    9  ll
+   10  cd ..
+   11  cd ..
+   12  cd ..
+   13  exit
+   14  java -version
+   15  exit
+   16  java -version
+   17  exit
+   18  java -version
+   19  javac
+   20  ls
+   21  exit
+   22  cd /SoftDev/
+   23  mkdir Java
+   24  cd Java/
+   25  mkdir Fundamentals
+   26  cd Fundamentals/
+   27  md Language
+   28  mkdir Language
+   29  cd Language/
+   30  mkdir Basics
+   31  cd Basics/
+   32  pwd
+   33  vi Hello.java
+   34  ll
+   35  javac Hello.java 
+   36  ll
+   37  ./Greeter.class
+   38  java Greeter
+   39  java Hello
+   40  java Greeter
+   41  rm Greeter.class 
+   42  java Greeter
+   43  javac Hello.java 
+   44  java Greeter
+   45  vi Greeter.class 
+   46  java Greeter
+   47  javac Hello.java 
+   48  java Greeter
+   49  vi Hello.java 
+   50  vi BranchTest.java
+   51  javac BranchTest.java 
+   52  ll
+   53  java BranchTest
+   54  java BranchTest jack
+   55  java BranchTest jack and jill
+   56  java BranchTest "jack and jill"
+   57  vi DoLoopTest.java
+   58  javac DoLoopTest.java 
+   59  java DoLoopTest jack jill jeff
+   60  java DoLoopTest
+   61  vi WhileLoopTest.java
+   62  javac WhileLoopTest.java 
+   63  java WhileLoopTest jack jill jeff
+   64  java WhileLoopTest
+   65  vi ForLoopTest1.java
+   66  javac ForLoopTest1.java 
+   67  java ForLoopTest1 jack jill jeff
+   68  java ForLoopTest1
+   69  vi ForLoopTest2.java
+   70  javac ForLoopTest2.java 
+   71  java ForLoopTest2 jack jill jeff
+   72  java ForLoopTest2
+   73  javac -source 1.4 ForLoopTest2.java 
+   74  vi TryCatchTest.java
+   75  javac TryCatchTest.java 
+   76  java TryCatchTest 2.5
+   77  java TryCatchTest 0.9
+   78  java TryCatchTest O.9
+   79  vi TryCatchTest.java
+   80  javac TryCatchTest.java 
+   81  java TryCatchTest 0.9
+   82  java TryCatchTest O.9
+   83  vi TryCatchTest.java
+   84  javac TryCatchTest.java 
+   85  java TryCatchTest 0.9
+   86  java TryCatchTest O.9
+   87  java TryCatchTest
+   88  vi TryCatchTest.java
+   89  javac TryCatchTest.java 
+   90  java TryCatchTest 0.9
+   91  java TryCatchTest O.9
+   92  java TryCatchTest
+   93  vi TryFinallyTest.java
+   94  javac TryFinallyTest.java 
+   95  vi TryFinallyTest.java
+   96  javac TryFinallyTest.java 
+   97  java TryFinallyTest 0.9
+   98  java TryFinallyTest O.9
+   99  vi TryFinallyTest.java
+  100  javac TryFinallyTest.java 
+  101  java TryFinallyTest 0.9
+  102  java TryFinallyTest
+  103  history > cmd21-02-2013.txt
+  104  cd ..
+  105  cd ..
+  106  cd ..
+  107  cd ..
+  108  cp Java ~/Shared/
+  109  cp Java/ ~/Shared/
+  110  cp -r Java ~/Shared/
+  111  exit
+  112  cd /SoftDev/Java/Fundamentals/Language/
+  113  vi
+  114  vi abc.txt
+  115  vi abc.txt
+  116  clear
+  117  exit
+  118  lds
+  119  ls
+  120  vi test.java
+  121  ls
+  122  clear
+  123  cd /SoftDev/Java/Fundamentals/Language
+  124  pwd
+  125  cd Basics/
+  126  ls
+  127  ll
+  128  cd ..
+  129  clear
+  130  exit
+  131  cd /SoftDev/Java/Fundamentals/Language/
+  132  clear
+  133  cd Basics/
+  134  ll
+  135  vi OverloadTest.java
+  136  javac OverloadTest.java 
+  137  java OverloadTest
+  138  vi OverloadTest.java
+  139  javac OverloadTest.java 
+  140  vi OverloadTest.java
+  141  javac OverloadTest.java 
+  142  java OverloadTest
+  143  vi OverloadTest.java
+  144  javac OverloadTest.java 
+  145  vi OverloadTest.java
+  146  javac OverloadTest.java 
+  147  java OverloadTest
+  148  cd ..
+  149  mkdir OOP
+  150  cd OOP/
+  151  mkdir payroll
+  152  vi payroll/Employee.java
+  153  javac payroll/Employee.java
+  154  ll
+  155  ll payroll/
+  156  vi payroll/Employee.java 
+  157  javac payroll/Employee.java
+  158  vi payroll/Employee.java 
+  159  javac payroll/Employee.java
+  160  vi BasicOOPTest1.java
+  161  javac BasicOOPTest1.java
+  162  vi BasicOOPTest1.java
+  163  javac BasicOOPTest1.java
+  164  java BasicOOPTest1
+  165  cp BasicOOPTest1.java BasicOOPTest2.java
+  166  vi BasicOOPTest2.java 
+  167  javac BasicOOPTest2.java 
+  168  java BasicOOPTest2
+  169  vi payroll/SalesPerson.java
+  170  javac payroll/SalesPerson.java
+  171  vi BasicOOPTest2.java 
+  172  javac payroll/SalesPerson.java
+  173  javac BasicOOPTest2.java 
+  174  java BasicOOPTest2
+  175  javap payroll.SalesPerson
+  176  javap -p payroll.SalesPerson
+  177  javap -p payroll.Employee
+  178  i BasicOOPTest2.java 
+  179  javac BasicOOPTest2.java 
+  180  java BasicOOPTest2
+  181  vi BasicOOPTest3.java
+  182  java BasicOOPTest3
+  183  javac BasicOOPTest3.java 
+  184  java BasicOOPTest3
+  185  vi BasicOOPTest3.java
+  186  javac BasicOOPTest3.java 
+  187  vi BasicOOPTest3.java
+  188  javac BasicOOPTest3.java 
+  189  vi BasicOOPTest3.java
+  190  javac BasicOOPTest3.java 
+  191  vi BasicOOPTest3.java
+  192  javac BasicOOPTest3.java 
+  193  java BasicOOPTest3
+  194  vi BasicOOPTest3.java
+  195  javac BasicOOPTest3.java 
+  196  java BasicOOPTest3
+  197  vi BasicOOPTest3.java
+  198  javac BasicOOPTest3.java 
+  199  java BasicOOPTest3
+  200  history > cmd22-02-2013
+  201  cd ..
+  202  cd ..
+  203  cd ..
+  204  cd ..
+  205  ls
+  206  cp -r ~/Shared/Java/
+  207  cp -r Java/ ~/Shared/Java/
+  208  exit
+  209  cd /SoftDev/Java/Fundamentals/Language/Basics/
+  210  ls
+  211  pwd
+  212  cd ..
+  213  cd OOP/
+  214  ll
+  215  javap payroll.Employee
+  216  javap java.lang.Object
+  217  vi Interval.java
+  218  javac Interval.java 
+  219  vi Interval.java
+  220  javac Interval.java 
+  221  vi ObjMethTest.java
+  222  javac ObjMethTest.java 
+  223  java ObjMethTest
+  224  vi ObjMethTest.java
+  225  vi Interval.java
+  226  javac Interval.java 
+  227  java ObjMethTest
+  228  vi ObjMethTest.java
+  229  javac ObjMethTest.java 
+  230  java ObjMethTest
+  231  vi ObjMethTest.java
+  232  javac ObjMethTest.java 
+  233  java ObjMethTest
+  234  vi ObjMethTest.java
+  235  javac ObjMethTest.java 
+  236  java ObjMethTest
+  237  vi ObjMethTest.java
+  238  javac ObjMethTest.java 
+  239  java ObjMethTest
+  240  vi ObjMethTest.java
+  241  javac ObjMethTest.java 
+  242  java ObjMethTest
+  243  vi Interval.java
+  244  javac Interval.java 
+  245  java ObjMethTest
+  246  vi Interval.java
+  247  javac Interval.java 
+  248  vi ObjMethTest.java
+  249  javac Interval.java 
+  250  javac ObjMethTest.java 
+  251  java ObjMethTest
+  252  vi Interval.java 
+  253  javac Interval.java 
+  254  java ObjMethTest
+  255  vi Interval.java 
+  256  javac Interval.java 
+  257  java ObjMethTest
+  258  vi Interval.java 
+  259  vi ObjMethTest.java
+  260  javac ObjMethTest.java 
+  261  java ObjMethTest
+  262  vi ObjMethTest.java
+  263  javac ObjMethTest.java 
+  264  java ObjMethTest
+  265  vi ObjMethTest.java
+  266  javac ObjMethTest.java 
+  267  vi ObjMethTest.java
+  268  javap java.lang.Thread
+  269  history > cmd25-02-2013.txt
+  270  cp -r ~/Shared/Java/ /mnt/hgfs/Shared/
+  271  cp -r ~/Shared/Java/ /mnt/hgfs/Shared
+  272  exit
+  273  cd /SoftDev/Java/Fundamentals/Language/OOP/
+  274  mkdir src
+  275  vi src/InsufficientFundsException.java
+  276  javac -d . src/InsufficientFundsException.java
+  277  vi src/IllegalTransferException.java
+  278  javac -d . src/IllegalTransferException.java
+  279  vi src/Account.java
+  280  javac -d . src/Account.java
+  281  vi src/Account.java
+  282  javac -d . src/Account.java
+  283  vi src/Account.java
+  284  vi src/CurrentAccount.java
+  285  javac -d . src/CurrentAccount.java
+  286  cp src/CurrentAccount.java src/SavingAccount.java
+  287  vi src/SavingAccount.java 
+  288  mv src/SavingAccount.java src/SavingsAccount.java 
+  289  vi src/SavingsAccount.java 
+  290  javac -d . src/SavingsAccount.java 
+  291  vi src/SavingsAccount.java 
+  292  javac -d . src/SavingsAccount.java 
+  293  vi src/Banker.java
+  294  javac -d . src/Banker.java
+  295  vi AdvOOPTest1.java
+  296  javac AdvOOPTest1.java
+  297  java AdvOOPTest1
+  298  java AdvOOPTest1
+  299  vi AdvOOPTest1.java
+  300  javac AdvOOPTest1.java
+  301  java AdvOOPTest1
+  302  java AdvOOPTest1 3000
+  303  java AdvOOPTest1 6000
+  304  java AdvOOPTest1 4OOO
+  305  vi AdvOOPTest1.java
+  306  vi src/Profitable.java
+  307  javac -d . src/Profitable.java
+  308  javap edu.met.adsd.banking.Profitable
+  309  vi src/SavingsAccount.java 
+  310  javac -d . src/SavingsAccount.java 
+  311  vi src/SavingsAccount.java 
+  312  javac -d . src/SavingsAccount.java 
+  313  vi src/SavingsAccount.java 
+  314  javac -d . src/SavingsAccount.java 
+  315  vi AdvOOPTest2.java
+  316  javac AdvOOPTest2.java
+  317  java AdvOOPTest2
+  318*  AdvOOPTest2.java
+  319  javac AdvOOPTest2.java
+  320  java AdvOOPTest2
+  321  mkdir doc
+  322  javadoc -d doc src/*.java
+  323  cd doc/
+  324  ll
+  325  firefox index.html 
+  326  history > cmd26-02-2013.txt

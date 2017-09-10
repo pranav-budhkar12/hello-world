@@ -1,0 +1,98 @@
+    1  mkdir Streams
+    2  cd Streams/
+    3  vi FileIOTest1.java
+    4  javac FileIOTest1.java
+    5  cp FileIOTest1.java data1.txt
+    6  vi data1.txt
+    7  java FileIOTest1 data1.txt data2.txt 
+    8  vi data2.txt 
+    9  java FileIOTest1 data2.txt data3.txt
+   10  vi data3.txt 
+   11  java -Djava.security.manager FileIOTest1 data1.txt data2.txt 
+   12  cp data1.txt /tmp/
+   13  java -Djava.security.manager FileIOTest1 /tmp/data1.txt data2.txt 
+   14  vi ~/.java.policy
+   15  policytool 
+   16  vi ~/.java.policy
+   17  java -Djava.security.manager FileIOTest1 /tmp/data1.txt /tmp/data2.txt 
+   18  java -Djava.security.manager FileIOTest1 /tmp/data1.txt data2.txt 
+   19  rm ~/.java.policy 
+   20  java -Djava.security.manager FileIOTest1 /tmp/data1.txt /tmp/data2.txt 
+   21  touch ~/.java.policy
+   22  policytool 
+   23  java -Djava.security.manager FileIOTest1 /tmp/data1.txt /tmp/data2.txt 
+   24  java -Djava.security.manager FileIOTest1 data1.txt /tmp/data2.txt 
+   25  java -Djava.security.manager FileIOTest1 /tmp/data1.txt data2.txt 
+   26  vi FileIOTest2.java
+   27  javac FileIOTest2.java
+   28  vi data1.txt
+   29  java FileIOTest2 data1.txt 
+   30  vi data1.txt
+   31  java FileIOTest2 data1.txt 
+   32  vi data1.txt
+   33  vi DataIOTest.java
+   34  javac DataIOTest.java
+   35  java DataIOTest 20000 4999.95 hdd
+   36  ll
+   37  vi product.dat 
+   38  vi product.dat 
+   39  vi DataIOTest.java
+   40  javac DataIOTest.java
+   41  java DataIOTest
+   42  cp DataIOTest.java TextIOTest.java
+   43  vi TextIOTest.java
+   44  javac TextIOTest.java
+   45  java TextIOTest 20000 4999.95 hdd
+   46  java TextIOTest
+   47  ll product.*
+   48  vi product.txt 
+   49  mkdir serhr
+   50  cp -r ~/Shared/hr/ serhr/
+   51  rm serhr/
+   52  rm -r serhr/
+   53  cp -r ~/Shared/hr/*.java serhr/
+   54  mkdir serhr
+   55  cp -r ~/Shared/hr/*.java serhr/
+   56  ll serhr/
+   57  vi serhr/Employee.java 
+   58  vi serhr/Department.java 
+   59  vi serhr/Department.java 
+   60  vi serhr/Employee.java 
+   61  javac -d . serhr/*.java
+   62  vi ObjSerTest.java
+   63  vi ObjSerTest.java
+   64  javac ObjSerTest.java
+   65  java ObjSerTest Accounting
+   66  ll
+   67  java ObjSerTest
+   68  vi mydept.dat 
+   69  vi serhr/Employee.java 
+   70  javac -d . serhr/Employee.java 
+   71  java ObjSerTest Accounting
+   72  vi mydept.dat 
+   73  java ObjSerTest
+   74  mkdir exthr
+   75  cp -r serhr/*.java exthr/
+   76  vi exthr/Employee.java
+   77  javac -d . exthr/*.java
+   78  java ObjSerTest Accounting
+   79  java ObjSerTest
+   80  vi mydept.dat 
+   81  javap java.io.Externalizable
+   82  javap java.io.Serializable
+   83  vi exthr/Employee.java 
+   84  javac exthr/Employee.java 
+   85  ll
+   86  ll exthr/
+   87  rm exthr/Employee.class 
+   88  javac -d . exthr/Employee.java 
+   89  java ObjSerTest 
+   90  vi exthr/Employee.java 
+   91  javac -d . exthr/Employee.java 
+   92  java ObjSerTest 
+   93  serialver hr.Employee
+   94  vi exthr/Employee.java 
+   95  javac -d . exthr/Employee.java 
+   96  java ObjSerTest 
+   97  histroy > cmd12-03-2013.txt
+   98  history > cmd12-03-2013.txt

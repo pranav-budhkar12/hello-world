@@ -1,0 +1,45 @@
+    1  pwd
+    2  mv commands/Greet.class commands_Greet.cmd
+    3  mv commands/Clock.class commands_Clock.cmd
+    4  mv commands/Dice.class commands_Dice.cmd
+    5  ll commands
+    6  java ClassLoaderTest
+    7  cp ~/Shared/DataFile.class .
+    8  javap DataFile
+    9  vi ClassLoaderTest.java 
+   10  javac ClassLoaderTest.java 
+   11  vi ClassLoaderTest.java 
+   12  javac ClassLoaderTest.java 
+   13  vi ClassLoaderTest.java 
+   14  javac ClassLoaderTest.java 
+   15  vi ClassLoaderTest.java 
+   16  javac ClassLoaderTest.java 
+   17  vi ClassLoaderTest.java 
+   18  javac ClassLoaderTest.java 
+   19  java ClassLoaderTest 
+   20  cp ClassLoaderTest.java SandboxTest.java
+   21  vi SandboxTest.java
+   22  javac SandboxTest.java
+   23  java SandboxTest
+   24  vi sandbox.policy
+   25  vi SandboxTest.java
+   26  javac SandboxTest.java
+   27  java SandboxTest
+   28  cp ~/Shared/Greeter.java .
+   29  vi Greeter.java 
+   30  javac Greeter.java 
+   31  vi StaticProxyTest.java
+   32  javac StaticProxyTest.java
+   33  java StaticProxyTest
+   34  vi StaticProxyTest.java
+   35  javac StaticProxyTest.java
+   36  java StaticProxyTest
+   37  vi StaticProxyTest.java
+   38  cp StaticProxyTest.java DynamicProxyTest.java
+   39  vi DynamicProxyTest.java
+   40  javac DynamicProxyTest.java
+   41  vi DynamicProxyTest.java
+   42  javac DynamicProxyTest.java
+   43  java DynamicProxyTest
+   44  vi DynamicProxyTest.java
+   45  history > cmd09-03-2013.txt

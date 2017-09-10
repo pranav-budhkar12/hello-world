@@ -1,0 +1,35 @@
+    1  mkdir xmlhr
+    2  cp ~/Shared/hr/*.java xmlhr/
+    3  vi xmlhr/Department.java 
+    4  javac -d . xmlhr/*.java
+    5  cp ObjSerTest.java XMLBindTest.java
+    6  vi XMLBindTest.java
+    7  javac XMLBindTest.java
+    8  java XMLBindTest Accounting
+    9  java XMLBindTest
+   10  ll mydept.*
+   11  vi mydept.xml 
+   12  vi xmlhr/Employee.java
+   13  javac -d . xmlhr/Employee.java
+   14  java XMLBindTest Accounting
+   15  vi mydept.xml 
+   16  java XMLBindTest
+   17  vi xmlhr/Employee.java
+   18  javac -d . xmlhr/Employee.java
+   19  java XMLBindTest Accounting
+   20  java XMLBindTest
+   21  vi mydept.xml 
+   22  vi PipeIOTest.java
+   23  javac PipeIOTest.java
+   24  java PipeIOTest
+   25  vi FileIOTest2.java 
+   26  cp FileIOTest2.java NewIOTest.java
+   27  vi NewIOTest.java
+   28  javac NewIOTest.java
+   29  vi data1.txt 
+   30  java NewIOTest data1.txt 
+   31  vi data1.txt 
+   32  java NewIOTest data1.txt 
+   33  vi data1.txt 
+   34  vi NewIOTest.java
+   35  history > cmd13-03-2013.txt

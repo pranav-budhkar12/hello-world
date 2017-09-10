@@ -1,0 +1,72 @@
+    1  cd /SoftDev/Java/Fundamentals/Reflection/
+    2  cp -r ../Language/OOP/payroll/ .
+    3  vi ObjectAccessTest.java
+    4  javac ObjectAccessTest.java
+    5  java ObjectAccessTest
+    6  cp ../Language/OOP/Interval.java .
+    7  javac Interval.java 
+    8  vi ObjectAccessTest.java
+    9  javac ObjectAccessTest.java
+   10  java ObjectAccessTest
+   11  vi Interval.java 
+   12  javac Interval.java 
+   13  java ObjectAccessTest
+   14  vi ObjectAccessTest.java
+   15  javac ObjectAccessTest.java
+   16  java ObjectAccessTest
+   17  vi ObjectAccessTest.java
+   18  javac ObjectAccessTest.java
+   19  java ObjectAccessTest
+   20  vi ObjectAccessTest.java
+   21  javac ObjectAccessTest.java
+   22  java ObjectAccessTest
+   23  vi ObjectAccessTest.java
+   24  javac ObjectAccessTest.java
+   25  java ObjectAccessTest
+   26  vi Interval.java 
+   27  javac Interval.java 
+   28  java ObjectAccessTest
+   29  vi Interval.java 
+   30  javac Interval.java 
+   31  java ObjectAccessTest
+   32  vi ObjectAccessTest.java
+   33  javac ObjectAccessTest.java
+   34  java ObjectAccessTest
+   35  vi ObjectAccessTest.java
+   36  cp -r ~/Shared/finance/ .
+   37  ll finance/
+   38  vi finance/LoanPolicy.java
+   39  vi finance/EducationLoan.java 
+   40  vi finance/HomeLoan.java 
+   41  vi finance/CarLoan.java 
+   42  vi finance/PersonalLoan.java 
+   43  vi finance/BusinessLoan.java 
+   44  vi EarlyBindTest.java
+   45  javac EarlyBindTest.java
+   46  javac finance/*.java
+   47  java EarlyBindTest 300000 finance.EducationLoan
+   48  java EarlyBindTest 300000 finance.HomeLoan
+   49  java EarlyBindTest 300000 finance.PersonalLoan
+   50  java EarlyBindTest 300000 finance.CarLoan
+   51  vi EarlyBindTest.java
+   52  java EarlyBindTest 300000 finance.PersonalLoan
+   53  vi EarlyBindTest.java
+   54  javac EarlyBindTest.java
+   55  java EarlyBindTest 300000 finance.PersonalLoan
+   56  java EarlyBindTest 300000 finance.HomeLoan
+   57  java EarlyBindTest 300000 finance.CarLoan
+   58  vi EarlyBindTest.java
+   59  javac EarlyBindTest.java 
+   60  java EarlyBindTest 300000 finance.CarLoan
+   61  vi EarlyBindTest.java
+   62  javac EarlyBindTest.java 
+   63  java EarlyBindTest 300000 finance.CarLoan
+   64  java EarlyBindTest 300000 finance.BusinessLoan
+   65  cp EarlyBindTest.java LateBindTest.java
+   66  vi LateBindTest.java
+   67  javac LateBindTest.java
+   68  java LateBindTest 300000 finance.EducationLoan interestRate
+   69  java LateBindTest 300000 finance.PersonalLoan interestRate
+   70  java LateBindTest 300000 finance.PersonalLoan interestRateForEmployees
+   71  java LateBindTest 300000 finance.BusinessLoan rateOfInterest
+   72  history > cmd06-03-2013.txt

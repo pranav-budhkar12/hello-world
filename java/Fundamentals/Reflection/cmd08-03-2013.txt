@@ -1,0 +1,158 @@
+    1  cd /SoftDev/Java/Fundamentals/Reflection/
+    2  cp -r ../Language/OOP/payroll/ .
+    3  vi ObjectAccessTest.java
+    4  javac ObjectAccessTest.java
+    5  java ObjectAccessTest
+    6  cp ../Language/OOP/Interval.java .
+    7  javac Interval.java 
+    8  vi ObjectAccessTest.java
+    9  javac ObjectAccessTest.java
+   10  java ObjectAccessTest
+   11  vi Interval.java 
+   12  javac Interval.java 
+   13  java ObjectAccessTest
+   14  vi ObjectAccessTest.java
+   15  javac ObjectAccessTest.java
+   16  java ObjectAccessTest
+   17  vi ObjectAccessTest.java
+   18  javac ObjectAccessTest.java
+   19  java ObjectAccessTest
+   20  vi ObjectAccessTest.java
+   21  javac ObjectAccessTest.java
+   22  java ObjectAccessTest
+   23  vi ObjectAccessTest.java
+   24  javac ObjectAccessTest.java
+   25  java ObjectAccessTest
+   26  vi Interval.java 
+   27  javac Interval.java 
+   28  java ObjectAccessTest
+   29  vi Interval.java 
+   30  javac Interval.java 
+   31  java ObjectAccessTest
+   32  vi ObjectAccessTest.java
+   33  javac ObjectAccessTest.java
+   34  java ObjectAccessTest
+   35  vi ObjectAccessTest.java
+   36  cp -r ~/Shared/finance/ .
+   37  ll finance/
+   38  vi finance/LoanPolicy.java
+   39  vi finance/EducationLoan.java 
+   40  vi finance/HomeLoan.java 
+   41  vi finance/CarLoan.java 
+   42  vi finance/PersonalLoan.java 
+   43  vi finance/BusinessLoan.java 
+   44  vi EarlyBindTest.java
+   45  javac EarlyBindTest.java
+   46  javac finance/*.java
+   47  java EarlyBindTest 300000 finance.EducationLoan
+   48  java EarlyBindTest 300000 finance.HomeLoan
+   49  java EarlyBindTest 300000 finance.PersonalLoan
+   50  java EarlyBindTest 300000 finance.CarLoan
+   51  vi EarlyBindTest.java
+   52  java EarlyBindTest 300000 finance.PersonalLoan
+   53  vi EarlyBindTest.java
+   54  javac EarlyBindTest.java
+   55  java EarlyBindTest 300000 finance.PersonalLoan
+   56  java EarlyBindTest 300000 finance.HomeLoan
+   57  java EarlyBindTest 300000 finance.CarLoan
+   58  vi EarlyBindTest.java
+   59  javac EarlyBindTest.java 
+   60  java EarlyBindTest 300000 finance.CarLoan
+   61  vi EarlyBindTest.java
+   62  javac EarlyBindTest.java 
+   63  java EarlyBindTest 300000 finance.CarLoan
+   64  java EarlyBindTest 300000 finance.BusinessLoan
+   65  cp EarlyBindTest.java LateBindTest.java
+   66  vi LateBindTest.java
+   67  javac LateBindTest.java
+   68  java LateBindTest 300000 finance.EducationLoan interestRate
+   69  java LateBindTest 300000 finance.PersonalLoan interestRate
+   70  java LateBindTest 300000 finance.PersonalLoan interestRateForEmployees
+   71  java LateBindTest 300000 finance.BusinessLoan rateOfInterest
+   72  history > cmd06-03-2013.txt
+   73  gedit cmd06-03-2013.txt 
+   74  exit
+   75  cd /SoftDev/Java/Fundamentals/Reflection/
+   76  ls
+   77  exit
+   78  cd /SoftDev/Java/Fundamentals/Reflection/
+   79  ls
+   80  vi finance/ReducingBalance.java
+   81  javac finance/ReducingBalance.java
+   82  vi finance/EducationLoan.java
+   83  javac finance/EducationLoan.java
+   84  javac finance/HomeLoan.java 
+   85  vi finance/HomeLoan.java 
+   86  javac finance/HomeLoan.java 
+   87  vi finance/ReducingBalance.java
+   88  javac finance/ReducingBalance.java
+   89  javac finance/EducationLoan.java
+   90  javac finance/HomeLoan.java 
+   91  vi finance/HomeLoan.java 
+   92  javac finance/HomeLoan.java 
+   93  vi finance/CarLoan.java 
+   94  vi finance/ReducingBalance.java
+   95  javac finance/ReducingBalance.java
+   96  javac finance/EducationLoan.java
+   97  javac finance/HomeLoan.java 
+   98  cp EarlyBindTest.java AnnotationTest1.java
+   99  vi AnnotationTest1.java
+  100  javac AnnotationTest1.java
+  101  java AnnotationTest1 300000 finance.PersonalLoan
+  102  java AnnotationTest1 300000 finance.EducationLoan
+  103  java AnnotationTest1 300000 finance.CarLoan
+  104  java AnnotationTest1 300000 finance.HomeLoan
+  105  vi finance/MaxDuration.java
+  106  javac finance/MaxDuration.java
+  107  vi finance/MaxDuration.java
+  108  javac finance/MaxDuration.java
+  109  vi finance/HomeLoan.java 
+  110  vi finance/PersonalLoan.java 
+  111  javac finance/PersonalLoan.java 
+  112  cp LateBindTest.java AnnotationTest2.java
+  113  vi AnnotationTest2.java 
+  114  javac AnnotationTest2.java 
+  115  javac finance/*.java
+  116  java AnnotationTest2 300000 finance.EducationLoan interestRate
+  117  java AnnotationTest2 300000 finance.HomeLoan interestRate
+  118  java AnnotationTest2 300000 finance.PersonalLoan interestRate
+  119  java AnnotationTest2 300000 finance.PersonalLoan interestRateForEmployees
+  120  javap -c ObjectAccessTest
+  121  java ObjectAccessTest
+  122  mv -r payroll/ /tmp
+  123  mv payroll/ /tmp
+  124  java ObjectAccessTest
+  125  java -cp .:/tmp ObjectAccessTest
+  126  java ObjectAccessTest
+  127  export CLASSPATH=.:/tmp
+  128  java ObjectAccessTest
+  129  unset CLASSPATH
+  130  java ObjectAccessTest
+  131  mv /tmp/payroll/ .
+  132  rm payroll/*.java
+  133  jar cf prlib.jar payroll
+  134  rm payroll/
+  135  rm -r payroll/
+  136  ll
+  137  java ObjectAccessTest
+  138  jar tf prlib.jar 
+  139  java -cp .:prlib.jar ObjectAccessTest
+  140  java ObjectAccessTest
+  141  sudo mv prlib.jar /usr/java/jdk1.6.0_14/jre/lib/ext/
+  142  java ObjectAccessTest
+  143  sudo mv /usr/java/jdk1.6.0_14/jre/lib/ext/prlib.jar .
+  144  java ObjectAccessTest
+  145  java -cp .:prlib.jar ObjectAccessTest
+  146  cp -r ~/Shared/commands/ .
+  147  ll commands/
+  148  vi commands/Greet.java 
+  149  vi commands/Dice.java 
+  150  vi commands/Clock.java 
+  151  javac commands/*.java
+  152  vi ClassLoaderTest.java
+  153  javac ClassLoaderTest.java
+  154  java ClassLoaderTest
+  155  java ClassLoaderTest
+  156  java ClassLoaderTest
+  157  history cmd08-03-2013.txt
+  158  history > cmd08-03-2013.txt
